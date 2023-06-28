@@ -1,0 +1,48 @@
+@use 'sagiri';
+
+.errWrap {
+  display: flex;
+}
+
+.errBox {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.img {
+  height: 100px;
+  width: 99px;
+
+  @include sagiri.sagirify(mid) {
+    height: 90px;
+    width: 89px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    height: 80px;
+    width: 79px;
+  } 
+
+  @include sagiri.sagirify(tiny) {
+    height: 70px;
+    width: 69px;
+  } 
+}
+
+#err {
+  font: 900 2rem sagiri.$console;
+  margin: auto 0;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.8rem sagiri.$console;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1.6rem sagiri.$console;
+  } 
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 1.4rem sagiri.$console;
+  } 
+}

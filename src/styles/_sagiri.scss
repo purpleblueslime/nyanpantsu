@@ -1,0 +1,32 @@
+/* consts */
+$color: #00aaff;
+$font: Jua;
+$console: Inconsolata;
+
+/* media queries */
+@mixin sagirify($sagiri) {
+
+  @if $sagiri == mid {
+    @media (600px <= width <= 800px) { 
+      @content; 
+    }
+  }
+  @else if $sagiri == smoll {
+    @media (400px <= width <= 600px) { 
+      @content; 
+    }
+  }
+  @else if $sagiri == tiny {
+    @media (width <= 400px) { 
+      @content; 
+    }
+  }
+
+}
+
+/* animation */
+@keyframes blob {
+  0%   {background: #2e2e2e;}
+  50%  {background: #161616;}
+  100% {background: #2e2e2e;}
+}

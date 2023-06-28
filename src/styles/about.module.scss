@@ -1,0 +1,27 @@
+@use 'sagiri';
+
+.def {
+  font: 900 1.6rem sagiri.$font;
+  margin-top: 10px;
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1.5rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 1.4rem sagiri.$font;
+  }
+}
+
+.sagiri {
+  font: 900 1rem sagiri.$console;
+  white-space: pre-line;
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$console;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$console;
+  }
+}

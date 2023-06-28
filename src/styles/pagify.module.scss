@@ -1,0 +1,47 @@
+@use 'sagiri';
+
+.btnsWrap {
+  display: flex;
+  margin: 10px 0;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.numba {
+  margin: auto 0;
+}
+
+.btn,
+.btnLoad {
+  background: sagiri.$color;
+  border-radius: 10px;
+  color: #fff;
+  font: 900 1.2rem sagiri.$font;
+  padding: 8px 12px 6px 12px;
+  transition: .4s filter;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$font;
+  }
+}
+
+.btn:hover,
+.btnLoad:hover {
+  filter: brightness(200%);
+}
+
+.btnLoad {
+  padding: 8px 18px;
+}

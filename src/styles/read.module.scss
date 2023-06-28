@@ -1,0 +1,126 @@
+@use 'sagiri';
+
+.def {
+  margin: 10px 0;
+}
+
+.readNav {
+  display: flex;
+  gap: 10px;
+}
+
+.navPop,
+.navBlue {
+  background:#000;
+  border-radius: 4px;
+  font: 900 1rem sagiri.$font;
+  padding: 2px 8px;
+  transition: .5s all;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$font;
+  }
+}
+
+.navPop:hover,
+.navBlue {
+  background: sagiri.$color;
+}
+
+.bigImgWrap {
+  position: sticky;
+}
+
+.bigImg {
+  width: 100%;
+}
+
+.lovespots {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.lovespot {
+  height: 100%;
+  width: 50%;
+}
+
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* cant justify enough that this is better than margining .eroWrap */
+  margin: 10px 0;
+}
+
+.img {
+  height: 280px;
+  transition: filter .4s;
+  width: 190px;
+
+  @include sagiri.sagirify(mid) {
+    height: 240px;
+    width: 160px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    height: 210px;
+    width: 140px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 170px;
+    width: 116px;
+  }
+}
+
+.img:hover {
+  filter: brightness(110%);
+}
+
+.btnsWrap {
+  display: flex;
+  margin: 10px 0;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.btn {
+  background: sagiri.$color;
+  border-radius: 10px;
+  color: #fff;
+  font: 900 1.2rem sagiri.$font;
+  padding: 8px 18px;
+  transition: .4s filter;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$font;
+  }
+}
+
+.btn:hover {
+  filter: brightness(200%);
+}

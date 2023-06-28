@@ -1,0 +1,68 @@
+@use 'sagiri';
+
+#feets {
+  display: flex;
+  gap: 10px;
+  margin: 80px 0;
+}
+
+.links {
+  display: flex;
+  font: 900 1.2rem sagiri.$font;
+  gap: 10px;
+  margin: auto 0 auto auto;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .9rem sagiri.$font;
+  } 
+}
+
+.imgWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.img {
+  height: 80px;
+  width: 80px;
+
+  @include sagiri.sagirify(smoll) {
+    height: 59px;
+    width: 59px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 33px;
+    width: 33px;
+  } 
+}
+
+.link,
+.nolink {
+  font: 900 1.2rem sagiri.$console;
+  transition: color .2s;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1rem sagiri.$console;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$console;
+  } 
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$console;
+  } 
+}
+
+.link:hover {
+  color: sagiri.$color;
+}
