@@ -3,6 +3,7 @@
 import {useState} from 'react'
 import Link from 'next/link'
 import useLocalStorage from 'use-local-storage'
+import Img from 'nyan/components/img.js'
 import styles from 'nyan/styles/read.module.scss'
 
 export default function component({sagiri}) {
@@ -24,8 +25,8 @@ export default function component({sagiri}) {
     <div id={'sagiri'}>
       <div className={styles.imgs}>
         {imgs.map((img, i) => 
-          <Link href={`/eros/${sagiri.aId}/read${strip ? '/~':''}?page=${i}`}>
-            <img alt={'img'} className={styles.img} loading={'lazy'} src={`/imgs/${img}`} />
+          <Link href={`/eros/${sagiri.aId}/read${strip ? '/~':''}?page=${i}`} key={i}>
+            <Img className={styles.img} color={sagiri.color} img={img} />
           </Link>
         )}
       </div>

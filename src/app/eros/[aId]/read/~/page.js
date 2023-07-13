@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import sagiriFetch from '../../sagiriFetch.js'
+import Img from 'nyan/components/img.js'
 import Component from './component.js'
 import Stripify from 'nyan/components/stripify.js'
 import styles from 'nyan/styles/read.module.scss'
@@ -45,8 +46,8 @@ export default async function page({params, searchParams}) {
           {hover}
         </style>
       </div>
-      {data.imgs.map((img, key) => 
-        <img alt={'imgs'} className={styles.bigImg} id={`💦${key}`} key={key} loading={'lazy'} src={`/imgs/${img}`} />
+      {data.imgs.map((img, i) => 
+        <Img className={styles.bigImg} color={data.color} height={'90vh'} key={i} img={img} />
       )}
       <Component page={searchParams.page} />
       <Stripify use={true} />

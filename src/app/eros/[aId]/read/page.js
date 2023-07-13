@@ -46,7 +46,7 @@ export default async function page({params, searchParams}) {
           {hover}
         </style>
       </div>
-      <Component p={`/eros/${data.aId}/read?`} page={searchParams.page} img={data.imgs[searchParams.page]} imgs={data.imgs} />
+      <Component p={`/eros/${data.aId}/read?`} page={searchParams.page} img={data.imgs[searchParams.page]} imgs={data.imgs} color={data.color} />
       <Pagify p={`/eros/${data.aId}/read?`} page={searchParams.page} data={data} />
       <Stripify use={false} />
     </div>

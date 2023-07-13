@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-#app {
+#appWrap {
   margin: auto;
   padding: 0 10px;
 
@@ -37,6 +37,10 @@ a {
   @media (1240px <= width) { 
     width: 1190px; 
   }
+}
+
+#app {
+  /* empty ;-; like me inside */
 }
 
 #sagiri {

@@ -1,6 +1,7 @@
 import {notFound} from 'next/navigation'
 import Link from 'next/link'
 import sagiriFetch from './sagiriFetch.js'
+import Img from 'nyan/components/img.js'
 import Component from './component.js'
 import Artist from 'nyan/components/artist.js'
 import styles from 'nyan/styles/eros.module.scss'
@@ -13,14 +14,14 @@ export default async function page({params}) {
   return (
     <div id={'sagiri'}>
       <div className={styles.bannerWrap}>
-        <img alt={'banner img'} className={styles.bannerImg} src={`/imgs/${data.bannerImg || data.img}`} />
+        <Img className={styles.bannerImg} color={data.color} img={data.bannerImg || data.img} />
         <div className={styles.bannerBlur} />
       </div>
       <div className={styles.eroWrap}>
         <div className={styles.ero}>
           <div className={styles.aboutWrap}>
             <div className={styles.imgWrap}>
-              <img alt={'img'} className={styles.img} src={`/imgs/${data.img}`} />
+              <Img className={styles.img} color={data.color} img={data.img} />
             </div>
             <div className={styles.about}>
               <div className={styles.en}>
@@ -30,8 +31,8 @@ export default async function page({params}) {
                 {data.jp}
               </div>
               <div className={styles.tags}>
-                {data.tags.map((tag) => 
-                  <Link className={styles.tag} href={`/tags/${tag}`} key={tag} 
+                {data.tags.map((tag, i) => 
+                  <Link className={styles.tag} href={`/tags/${tag}`} key={i} 
                     style={{background: data.color}}>
                       {tag}
                   </Link>
@@ -62,7 +63,7 @@ export default async function page({params}) {
         artists ({data.artists.length})
       </div>
       <div className={styles.artists}>
-        {data.artists.map((sagiri, key) => <Artist sagiri={sagiri} color={data.color} key={key} />)}
+        {data.artists.map((sagiri, i) => <Artist sagiri={sagiri} color={data.color} key={i} />)}
       </div>
       <div className={styles.def}>
         imgs ({data.imgs.length})

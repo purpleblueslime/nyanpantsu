@@ -1,13 +1,14 @@
 import Link from 'next/link'
+import Img from 'nyan/components/img.js'
 import styles from 'nyan/styles/read.module.scss'
 
-export default function component({p, page, img, imgs}) {
+export default function component({p, page, img, imgs, color}) {
 
   page = Number(page)   // numabify that string 
 
   return (
     <div className={styles.bigImgWrap}>
-      <img alt={'imgs'} className={styles.bigImg} src={`/imgs/${img}`} />
+      <Img className={styles.bigImg} color={color} height={'90vh'} img={img} />
       <div className={styles.lovespots}>
         <Link className={styles.lovespot} 
           href={page >> 0 ? `${p}page=${page - 1}` : `${p}page=0` /* to page == 0 */}>

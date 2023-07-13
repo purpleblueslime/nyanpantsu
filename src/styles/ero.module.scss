@@ -42,6 +42,7 @@
 
 .en {
   font: 900 1rem sagiri.$font;
+  margin-top: 8px;
 
   @include sagiri.sagirify(mid) {
     font: 900 .9rem sagiri.$font;

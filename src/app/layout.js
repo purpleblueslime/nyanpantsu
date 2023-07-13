@@ -19,9 +19,11 @@ export default function html({children}) {
         <meta name={'twitter:title'} content={'nyanpantsu: read eromanga(s) online for free! 💦'} />
         <meta name={'twitter:image'} content={'https://files.catbox.moe/aok43e.png'} />
       </head>
-      <body id={'app'}>
-        <Bar />
-        {children}
+      <body id={'appWrap'}>
+        <div id={'app'} style={{minHeight: '100vh'}}>
+          <Bar />
+          {children}
+        </div>
         <Feets v={v} />
       </body>
     </html>

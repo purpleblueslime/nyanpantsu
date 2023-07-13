@@ -35,7 +35,7 @@ export default async function page({searchParams}) {
         </Link>
       </div> 
       <div className={styles.eros}>
-        {data.map((sagiri) => <Ero key={sagiri.aId} sagiri={sagiri} />)}
+        {data.map(({sagiri}) => <Ero key={sagiri.aId} sagiri={sagiri} />)}
       </div>
       {searchParams.page <= 0 && data.length != 18 ? <></>:
         <Pagify p={'/eros/hots?'} sagiri={data} page={searchParams.page} />}

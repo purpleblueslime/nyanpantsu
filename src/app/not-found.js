@@ -15,7 +15,7 @@ export default function page() {
     </div>
     <div className={styles.errWrap}>
       <div className={styles.errBox}>
-        <img alt={'sob img'} className={styles.img} src={'https://files.catbox.moe/4gonj9.gif'} />
+        <img alt={'img'} className={styles.img} src={'https://files.catbox.moe/43y1m0.png'} />
         <div id={styles.err}>404</div>
       </div>
     </div>

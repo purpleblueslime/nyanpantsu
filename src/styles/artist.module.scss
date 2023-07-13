@@ -8,6 +8,7 @@
 .img {
   border-radius: 50%;
   height: 60px;
+  overflow: hidden;
   width: 60px;
 
   @include sagiri.sagirify(smoll) {
