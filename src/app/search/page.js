@@ -1,4 +1,4 @@
-import {notFound} from 'next/navigation'
+import {redirect} from 'next/navigation'
 import Link from 'next/link'
 import sagiriFetch from './sagiriFetch.js'
 import Ero from 'nyan/components/ero.js'
@@ -9,7 +9,7 @@ export default async function page({searchParams}) {
 
   if (!searchParams.page) searchParams.page = 0 // def page numba
   const {data} = await sagiriFetch(searchParams.query, searchParams.page) // fetch sagiri data Uwu
-  if (!data) notFound() // not found >o<
+  if (!data) redirect('/404') // not found >o<
 
   return (
     <div id={'sagiri'}>
