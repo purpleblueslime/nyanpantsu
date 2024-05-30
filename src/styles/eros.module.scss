@@ -1,0 +1,295 @@
+@use 'sagiri';
+
+.def {
+  display: flex;
+  font: 900 1.8rem sagiri.$font;
+  margin: 10px 0;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.6rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1.4rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 1.2rem sagiri.$font;
+  }
+}
+
+.bannerWrap {
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 100%;
+
+  @include sagiri.sagirify(mid) {
+    height: 330px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    height: 290px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 248px;
+  }
+}
+
+.bannerImg {
+  height: 400px;
+  width: 100%;
+
+  @include sagiri.sagirify(mid) {
+    height: 330px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    height: 290px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 248px;
+  }
+}
+
+.bannerBlur {
+  backdrop-filter: blur(20px);
+  background: #0000004d;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.eroWrap {
+  display: flex;
+  height: 400px;
+  width: 100%;
+
+  @include sagiri.sagirify(mid) {
+    height: 330px;
+  }
+
+  @include sagiri.sagirify(smoll) {
+    height: 290px;
+    overflow: scroll; /* scroll on smoll screens */
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 248px;
+    overflow: scroll; /* scroll on smoll screens */
+  }
+}
+
+.ero {
+  margin: auto;
+  padding: 10px 0;
+  position: sticky;
+}
+
+.aboutWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.imgWrap {
+  position: sticky;
+}
+
+.img {
+  height: 280px;
+  transition: filter .4s;
+  width: 180px;
+
+  @include sagiri.sagirify(mid) {
+    height: 240px;
+    width: 160px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    height: 210px;
+    width: 140px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 180px;
+    width: 118px;
+  }
+}
+
+.img:hover {
+  filter: brightness(110%);
+}
+
+.about {
+  /* empty like me inside */
+}
+
+.en {
+  font: 900 1.8rem sagiri.$font;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.4rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1.2rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 1rem sagiri.$font;
+  }
+}
+
+.jp {
+  color: #ffffff99;
+  font: 900 1.6rem sagiri.$font;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.2rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$font;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tag {
+  background: sagiri.$color;
+  border-radius: 20px;
+  font: 900 1rem sagiri.$font;
+  padding: 6px 12px;
+  transition: .4s filter;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 .8rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .6rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .5rem sagiri.$font;
+  }
+}
+
+.tag:hover {
+  filter: brightness(200%);
+}
+
+.gfWrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.gf,
+.hawt {
+  font: 900 1.2rem sagiri.$font;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .9rem sagiri.$font;
+  }
+}
+
+.gf {
+  margin-right: auto;
+}
+
+.hawt {
+  display: flex;
+  gap: 5px;
+}
+
+.saucesWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.sauceName {
+  display: flex;
+  font: 900 1.8rem sagiri.$font;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.6rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1.4rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 1.2rem sagiri.$font;
+  }
+}
+
+.sauces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.erosNav {
+  display: flex;
+  gap: 10px;
+}
+
+.navPop,
+.navBlue {
+  background:#000;
+  border-radius: 4px;
+  font: 900 1rem sagiri.$font;
+  padding: 2px 8px;
+  transition: .5s all;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$font;
+  }
+}
+
+.navPop:hover,
+.navBlue {
+  background: sagiri.$color;
+}
+
+.eros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* cant justify enough that this is better than margining .eroWrap */
+  margin: 10px 0;
+}

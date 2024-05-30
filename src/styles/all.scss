@@ -1,0 +1,65 @@
+@use 'sagiri';
+
+body {
+  background: #000;
+  color: #fff;
+  font: 900 1rem sagiri.$font;
+  margin: 0;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 .8rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .7rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .6rem sagiri.$font;
+  } 
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#appWrap {
+  margin: auto;
+  padding: 0 10px;
+
+  /* if width's more than 1240px (idk it just works ¯\_(ツ)_/¯) */
+  @media (1240px <= width) { 
+    width: 1190px; 
+  }
+}
+
+#app {
+  /* empty ;-; like me inside */
+}
+
+#sagiri {
+  /* empty ;-; like me inside */
+}
+
+.sagiriWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.sagiri {
+  color: sagiri.$color;
+  overflow-wrap: break-word;
+  transition: .4s filter;
+}
+
+.sagiri:hover {
+  filter: brightness(200%);
+}

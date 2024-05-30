@@ -1,0 +1,58 @@
+@use 'sagiri';
+
+.eroWrap {
+  position: sticky;
+  height: auto;
+  width: 190px;
+
+  @include sagiri.sagirify(mid) {
+    width: 160px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    width: 140px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    width: 116px;
+  }
+}
+
+.img {
+  height: 280px;
+  transition: filter .4s;
+  width: 100%;
+
+  @include sagiri.sagirify(mid) {
+    height: 240px;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    height: 210px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 170px;
+  }
+}
+
+.eroWrap:hover .img {
+  filter: brightness(110%);
+}
+
+.en {
+  font: 900 1rem sagiri.$font;
+  margin-top: 8px;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 .9rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .8rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .7rem sagiri.$font;
+  }
+}

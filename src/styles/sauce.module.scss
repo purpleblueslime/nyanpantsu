@@ -1,0 +1,64 @@
+@use 'sagiri';
+
+.sauce {
+  display: flex;
+  gap: 10px;
+}
+
+.img {
+  border-radius: 50%;
+  height: 60px;
+  overflow: hidden;
+  width: 60px;
+
+  @include sagiri.sagirify(smoll) {
+    height: 50px;
+    width: 50px;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.about {
+  margin: auto 0;
+}
+
+.name {
+  color: sagiri.$color;
+  font: 900 1.2rem sagiri.$font;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1.1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 1rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .9rem sagiri.$font;
+  }
+}
+
+.name:hover {
+  filter: brightness(200%);
+}
+
+.eros {
+  font: 900 1.1rem sagiri.$font;
+
+  @include sagiri.sagirify(mid) {
+    font: 900 1rem sagiri.$font;
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    font: 900 .9rem sagiri.$font;
+  }
+
+  @include sagiri.sagirify(tiny) {
+    font: 900 .8rem sagiri.$font;
+  }
+}

@@ -1,0 +1,72 @@
+@use 'sagiri';
+
+.imgWrap {
+  position: sticky;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.lazy {
+  background: #1f1f1f;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.barWrap {
+  margin: auto;
+  overflow: hidden;
+  position: sticky;
+}
+
+.barWrap,
+.bar {
+  border-radius: 5px;
+  height: 10px;
+  width: 40px;
+
+  @include sagiri.sagirify(mid) {
+    border-radius: 4.5px;
+    height: 9px;
+    width: 36px;  
+  } 
+
+  @include sagiri.sagirify(smoll) {
+    border-radius: 4px;
+    height: 8px;
+    width: 32px;  
+  }
+
+  @include sagiri.sagirify(tiny) {
+    border-radius: 3.5px;
+    height: 7px;
+    width: 28px;  
+  }
+}
+
+.bar {
+  animation: movey 2s infinite;
+  background: sagiri.$color;
+  position: absolute;
+  transition: all .2s;
+}
+
+@keyframes movey {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: -50%;
+  }
+  100% {
+    left: 50%;
+  }
+}

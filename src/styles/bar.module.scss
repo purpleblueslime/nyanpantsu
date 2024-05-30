@@ -1,0 +1,46 @@
+@use 'sagiri';
+
+#barWrap {
+  display: flex;
+  height: 60px;
+  padding: 10px 0;
+}
+
+.boxWrap {
+  background: #000;
+  border-radius: 10px;
+  display: flex;
+  height: 40px;
+  margin: auto 0;
+}
+
+.box {
+  background: #00000000; /* messes with boxWrap */
+  border: none;
+  color: #fff;
+  font: 900 1rem sagiri.$font;
+  outline: none;
+  padding: 10px;
+}
+
+.btn {
+  background: sagiri.$color;
+  border-radius: 50%;
+  font: 900 .9rem sagiri.$font;
+  margin: 4px;
+  padding: 8px 12px;
+  transition: filter .4s;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.barImgWrap {
+  margin-left: auto;
+}
+
+.barImg {
+  height: 60px;
+  width: 60px;
+}

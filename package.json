@@ -1,0 +1,16 @@
+{
+  "name": "nyanpantsu",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "mongo": "^0.1.0",
+    "next": "^14.2.3",
+    "use-local-storage": "^3.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}
