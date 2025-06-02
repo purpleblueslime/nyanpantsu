@@ -3,7 +3,7 @@
 const nextConfig = {
   sassOptions: {
     includePath: './src/styles/',
-  }
-}
+  },
+};
 
 module.exports = nextConfig;

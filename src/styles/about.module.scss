@@ -18,10 +18,10 @@
   white-space: pre-line;
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }

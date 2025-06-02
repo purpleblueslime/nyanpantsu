@@ -36,19 +36,19 @@
   @include sagiri.sagirify(mid) {
     border-radius: 4.5px;
     height: 9px;
-    width: 36px;  
-  } 
+    width: 36px;
+  }
 
   @include sagiri.sagirify(smoll) {
     border-radius: 4px;
     height: 8px;
-    width: 32px;  
+    width: 32px;
   }
 
   @include sagiri.sagirify(tiny) {
     border-radius: 3.5px;
     height: 7px;
-    width: 28px;  
+    width: 28px;
   }
 }
 
@@ -56,7 +56,7 @@
   animation: movey 2s infinite;
   background: sagiri.$color;
   position: absolute;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 @keyframes movey {

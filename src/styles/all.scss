@@ -7,16 +7,16 @@ body {
   margin: 0;
 
   @include sagiri.sagirify(mid) {
-    font: 900 .8rem sagiri.$font;
-  } 
+    font: 900 0.8rem sagiri.$font;
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .7rem sagiri.$font;
-  } 
+    font: 900 0.7rem sagiri.$font;
+  }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .6rem sagiri.$font;
-  } 
+    font: 900 0.6rem sagiri.$font;
+  }
 }
 
 img {
@@ -34,8 +34,8 @@ a {
   padding: 0 10px;
 
   /* if width's more than 1240px (idk it just works ¯\_(ツ)_/¯) */
-  @media (1240px <= width) { 
-    width: 1190px; 
+  @media (1240px <= width) {
+    width: 1190px;
   }
 }
 
@@ -57,7 +57,7 @@ a {
 .sagiri {
   color: sagiri.$color;
   overflow-wrap: break-word;
-  transition: .4s filter;
+  transition: 0.4s filter;
 }
 
 .sagiri:hover {

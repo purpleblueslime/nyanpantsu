@@ -7,7 +7,7 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.6rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1.4rem sagiri.$font;
@@ -27,7 +27,7 @@
 
   @include sagiri.sagirify(mid) {
     height: 330px;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     height: 290px;
@@ -44,7 +44,7 @@
 
   @include sagiri.sagirify(mid) {
     height: 330px;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     height: 290px;
@@ -101,13 +101,13 @@
 
 .img {
   height: 280px;
-  transition: filter .4s;
+  transition: filter 0.4s;
   width: 180px;
 
   @include sagiri.sagirify(mid) {
     height: 240px;
     width: 160px;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     height: 210px;
@@ -133,7 +133,7 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.4rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1.2rem sagiri.$font;
@@ -150,14 +150,14 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.2rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }
 
@@ -173,18 +173,18 @@
   border-radius: 20px;
   font: 900 1rem sagiri.$font;
   padding: 6px 12px;
-  transition: .4s filter;
+  transition: 0.4s filter;
 
   @include sagiri.sagirify(mid) {
-    font: 900 .8rem sagiri.$font;
-  } 
+    font: 900 0.8rem sagiri.$font;
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .6rem sagiri.$font;
+    font: 900 0.6rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .5rem sagiri.$font;
+    font: 900 0.5rem sagiri.$font;
   }
 }
 
@@ -204,14 +204,14 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 }
 
@@ -237,7 +237,7 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.6rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1.4rem sagiri.$font;
@@ -262,22 +262,22 @@
 
 .navPop,
 .navBlue {
-  background:#000;
+  background: #000;
   border-radius: 4px;
   font: 900 1rem sagiri.$font;
   padding: 2px 8px;
-  transition: .5s all;
+  transition: 0.5s all;
 
   @include sagiri.sagirify(mid) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }
 

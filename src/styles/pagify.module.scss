@@ -21,7 +21,7 @@
   color: #fff;
   font: 900 1.2rem sagiri.$font;
   padding: 7px 14px;
-  transition: .4s filter;
+  transition: 0.4s filter;
 }
 
 .btnLoad {
@@ -30,18 +30,18 @@
   color: #fff;
   font: 900 1.2rem sagiri.$font;
   padding: 8px 12px 6px 12px;
-  transition: .4s filter;
+  transition: 0.4s filter;
 
   @include sagiri.sagirify(mid) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }
 

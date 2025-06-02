@@ -32,14 +32,14 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 }
 
@@ -52,13 +52,13 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }

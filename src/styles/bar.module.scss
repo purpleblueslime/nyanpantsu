@@ -26,10 +26,10 @@
 .btn {
   background: sagiri.$color;
   border-radius: 50%;
-  font: 900 .9rem sagiri.$font;
+  font: 900 0.9rem sagiri.$font;
   margin: 4px;
   padding: 8px 12px;
-  transition: filter .4s;
+  transition: filter 0.4s;
 }
 
 .btn:hover {
