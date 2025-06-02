@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import sagiriFetch from '../sagiriFetch.js';
+import sagiriFetch from './sagiriFetch.js';
 import Component from './component.js';
 import Pagify from 'nyan/components/pagify.js';
 import Stripify from 'nyan/components/stripify.js';
