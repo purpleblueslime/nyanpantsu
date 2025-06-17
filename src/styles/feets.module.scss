@@ -14,15 +14,15 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .9rem sagiri.$font;
-  } 
+    font: 900 0.9rem sagiri.$font;
+  }
 }
 
 .imgWrap {
@@ -42,25 +42,25 @@
   @include sagiri.sagirify(tiny) {
     height: 33px;
     width: 33px;
-  } 
+  }
 }
 
 .link,
 .nolink {
   font: 900 1.2rem sagiri.$font;
-  transition: color .2s;
+  transition: color 0.2s;
 
   @include sagiri.sagirify(mid) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
-  } 
+    font: 900 0.9rem sagiri.$font;
+  }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
-  } 
+    font: 900 0.8rem sagiri.$font;
+  }
 }
 
 .link:hover {

@@ -11,22 +11,22 @@
 
 .navPop,
 .navBlue {
-  background:#000;
+  background: #000;
   border-radius: 4px;
   font: 900 1rem sagiri.$font;
   padding: 2px 8px;
-  transition: .5s all;
+  transition: 0.5s all;
 
   @include sagiri.sagirify(mid) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }
 
@@ -49,7 +49,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .lovespot {
@@ -67,13 +67,13 @@
 
 .img {
   height: 280px;
-  transition: filter .4s;
+  transition: filter 0.4s;
   width: 190px;
 
   @include sagiri.sagirify(mid) {
     height: 240px;
     width: 160px;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     height: 210px;
@@ -107,18 +107,18 @@
   color: #fff;
   font: 900 1.2rem sagiri.$font;
   padding: 8px 18px;
-  transition: .4s filter;
+  transition: 0.4s filter;
 
   @include sagiri.sagirify(mid) {
     font: 900 1rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
-    font: 900 .9rem sagiri.$font;
+    font: 900 0.9rem sagiri.$font;
   }
 
   @include sagiri.sagirify(tiny) {
-    font: 900 .8rem sagiri.$font;
+    font: 900 0.8rem sagiri.$font;
   }
 }
 

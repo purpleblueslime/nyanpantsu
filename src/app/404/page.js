@@ -1,7 +1,5 @@
-import {notFound} from 'next/navigation'
+import { notFound } from 'next/navigation';
 
 export default async function page() {
-
-  notFound() // not found >o<
-  
+  notFound(); // not found >o<
 }

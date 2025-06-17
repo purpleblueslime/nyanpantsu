@@ -17,17 +17,17 @@
   @include sagiri.sagirify(mid) {
     height: 90px;
     width: 89px;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     height: 80px;
     width: 79px;
-  } 
+  }
 
   @include sagiri.sagirify(tiny) {
     height: 70px;
     width: 69px;
-  } 
+  }
 }
 
 #err {
@@ -36,13 +36,13 @@
 
   @include sagiri.sagirify(mid) {
     font: 900 1.8rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(smoll) {
     font: 900 1.6rem sagiri.$font;
-  } 
+  }
 
   @include sagiri.sagirify(tiny) {
     font: 900 1.4rem sagiri.$font;
-  } 
+  }
 }
